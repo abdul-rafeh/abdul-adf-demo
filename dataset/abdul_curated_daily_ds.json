@@ -1,0 +1,25 @@
+{
+	"name": "abdul_curated_daily_ds",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "abdul_ls_adf",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "tripdata_curated_daily.csv",
+				"folderPath": "daily",
+				"fileSystem": "abdul-curated"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
